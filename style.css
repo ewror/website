@@ -57,6 +57,7 @@ body {
     opacity: 0;
     transition: opacity 2s ease-out;
     z-index: 2;
+    max-width: 50%;
 }
 
 .profile-header {
@@ -182,6 +183,47 @@ body {
 .social-list img {
     width: 24px;
     height: 24px;
+}
+
+@media (max-width: 600px) {
+    .wrapper {
+        min-width: 75%;
+        padding: 20px;
+    }
+
+    .profile-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .activity-info {
+        display: none;
+    }
+
+    .profile-info {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .profile-picture {
+        width: 55px;
+        height: 55px;
+    }
+
+    #username {
+        font-size: 20px;
+    }
+
+    #current-activity {
+        font-size: 13px;
+    }
+
+    .social-list {
+        margin-top: 30px;
+    }
 }
 
 .snowflake {
