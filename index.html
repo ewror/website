@@ -1,0 +1,130 @@
+<html lang="en">
+
+<head>
+    <title>pukd</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="pukd">
+    <meta property="og:title" content="pukd" />
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="pukd" />
+    <meta property="og:image" href="assets\\av.png">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1280">
+    <meta property="og:image:height" content="800">
+    <meta property="og:url" content="https://pukd.me/" />
+    <link
+        href="https://fonts.googleapis.com/css2?display=swap&amp;family=Montserrat:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&amp;family=Source+Sans+Pro:ital,wght@0,200;0,400;1,200;1,400"
+        rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/png" href="assets\\av.png">
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<div class="wrapper">
+    <div class="profile-header">
+        <div class="profile-info">
+            <img id="profile-picture" alt="pfp" class="profile-picture">
+            <div class="profile-details">
+                <h1 id="username">User</h1>
+                <p id="current-activity">No current activity</p>
+            </div>
+        </div>
+        <div class="activity-info">
+            <div class="activity-details">
+                <p id="activity-name" class="activity-name"></p>
+                <p id="activity-data" class="activity-data"></p>
+            </div>
+            <img id="activity-cover" class="activity-cover" alt="Cover">
+        </div>
+    </div>
+
+    <div class="social-list">
+        <a id="steam-icon" href="https://steamcommunity.com/id/pukd" target="_blank">
+            <img src="https://api.iconify.design/mdi:steam.svg?color=%23ffffff4f">
+        </a>
+        <a id="spotify-icon" href="https://open.spotify.com/user/31tadm6y7ywhyuahfwmy7fmcvo3m?si=611237825899424f"
+            target="_blank">
+            <img src="https://api.iconify.design/mdi:spotify.svg?color=%23ffffff4f">
+        </a>
+        <a id="anilist-icon" href="https://anilist.co/user/usp" target="_blank">
+            <img src="https://api.iconify.design/simple-icons:anilist.svg?color=%23ffffff4f">
+        </a>
+    </div>
+</div>
+
+
+<div class="snowflakes" aria-hidden="true">
+    <div class="snowflake">
+        .
+    </div>
+    <div class="snowflake">
+        .
+    </div>
+    <div class="snowflake">
+        .
+    </div>
+    <div class="snowflake">
+        .
+    </div>
+    <div class="snowflake">
+        .
+    </div>
+    <div class="snowflake">
+        .
+    </div>
+    <div class="snowflake">
+        .
+    </div>
+    <div class="snowflake">
+        .
+    </div>
+    <div class="snowflake">
+        .
+    </div>
+    <div class="snowflake">
+        .
+    </div>
+    <div class="snowflake">
+        .
+    </div>
+    <div class="snowflake">
+        .
+    </div>
+</div>
+
+<div class="background-container"></div>
+    <div class="background"></div>
+    <div class="dark-overlay"></div>
+</div>
+
+<script>
+    setTimeout(function() {
+        document.querySelector('.wrapper').style.opacity = '1';
+    }, 420);
+
+    setTimeout(function() {
+        document.querySelector('.background').style.opacity = '1';
+    }, 2500);
+    document.onkeydown = function (e) {
+        if (event.keyCode == 123) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+            return false;
+        }
+    }
+    document.addEventListener('contextmenu', function (e) {
+        e.preventDefault();
+    });
+</script>
+
+</html>
