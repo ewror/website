@@ -212,6 +212,7 @@ body {
     .profile-picture {
         width: 55px;
         height: 55px;
+        margin-top: 8px;
     }
 
     #username {
