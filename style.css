@@ -73,14 +73,14 @@ body {
 
 .profile-picture {
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
+    width: 70px;
+    height: 70px;
+    margin-right: 13px;
     border: 3px solid transparent;
 }
 
 .profile-details {
-    margin-top: 5px;
+    margin-top: 12px;
     text-align: left;
     flex-direction: column;
 }
@@ -92,16 +92,16 @@ body {
 }
 
 #current-activity {
-    margin-top: 3px;
-    font-size: 12px;
+    margin-top: 5px;
+    font-size: 13px;
     font-family: "Source Sans Pro";
 }
 
 #custom-emoji {
-    width: 18px;
-    height: 18px;
+    width: 21px;
+    height: 21px;
     vertical-align: middle;
-    margin-bottom: 3px;
+    margin-bottom: 1px;
     margin-right: 3px;
 }
 
@@ -138,6 +138,7 @@ body {
 .activity-details {
     text-align: right;
     margin-right: 15px;
+    margin-bottom: 8px;
 }
 
 .activity-name {
